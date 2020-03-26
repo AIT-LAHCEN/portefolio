@@ -29,7 +29,7 @@ class About extends Component {
             <p>{bio}</p>
             <div className="row">
                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
+                  <h2>Coordonnées</h2>
                   <p className="address">
 						   <span>{name}</span><br />
 						   <span>{street}<br />
@@ -41,8 +41,12 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Mon Curriculum Vitae</a>
-                     <a href={LettreM} className="button"><i className="fa fa-download"></i>Ma Lettre de Motivation</a>
+                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Visualiser Mon CV</a>
+                     <a href={LettreM} className="button"><i className="fa fa-download"></i>La Lettre de Motivation</a>
+                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Le Projet Professionnel</a>
+                     <a href={LettreM} className="button"><i className="fa fa-download"></i>La Fiche Métier</a>
+                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>La Carte D'identité des entreprises</a>
+                     <a href={LettreM} className="button"><i className="fa fa-download"></i>Le Bilan Personnel</a>
                   </p>
                </div>
             </div>
