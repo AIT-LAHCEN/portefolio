@@ -39,8 +39,10 @@ class About extends Component {
 					   </p>
                </div>
                <div className="columns download">
-                  <p>
-                     <a href="_Documents/CV.pdf" target = "_blank" className="button"><i className="fa fa-download"></i>Visualiser Mon CV</a>
+                     <p><form method="get" action="_Documents/CV.pdf">
+                        <button type="submit">Télecharger</button>
+                     </form>
+                     <a href="https://ait-lahcen.github.io/portefolio/_Documents/CV.pdf" className="button"><i className="fa fa-download"></i>Visualiser Mon CV</a>
                      <a href="_Documents/Lettre_de_motivation.pdf" className="button"><i className="fa fa-download"></i>La Lettre de Motivation</a>
                      <a href="_Documents/projet_professionnel.pdf" className="button"><i className="fa fa-download"></i>Le Projet Professionnel</a>
                      <a href="_Documents/fiche_metier.pdf" className="button"><i className="fa fa-download"></i>La Fiche Métier</a>
