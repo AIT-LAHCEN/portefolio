@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { } from 'react-pdf'
 
 class About extends Component {
   render() {
@@ -13,8 +14,6 @@ class About extends Component {
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
-      var resumeDownload = this.props.data.resumedownload;
-      var LettreM = this.props.data.LettreM;
     }
 
     return (
@@ -41,12 +40,12 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Visualiser Mon CV</a>
-                     <a href={LettreM} className="button"><i className="fa fa-download"></i>La Lettre de Motivation</a>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Le Projet Professionnel</a>
-                     <a href={LettreM} className="button"><i className="fa fa-download"></i>La Fiche Métier</a>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>La Carte D'identité des entreprises</a>
-                     <a href={LettreM} className="button"><i className="fa fa-download"></i>Le Bilan Personnel</a>
+                     <a href="_Documents/CV.pdf" target = "_blank" className="button"><i className="fa fa-download"></i>Visualiser Mon CV</a>
+                     <a href="_Documents/Lettre_de_motivation.pdf" className="button"><i className="fa fa-download"></i>La Lettre de Motivation</a>
+                     <a href="_Documents/projet_professionnel.pdf" className="button"><i className="fa fa-download"></i>Le Projet Professionnel</a>
+                     <a href="_Documents/fiche_metier.pdf" className="button"><i className="fa fa-download"></i>La Fiche Métier</a>
+                     <a href="_Documents/carte_identite_entreprise.pdf" className="button"><i className="fa fa-download"></i>La Carte D'identité des entreprises</a>
+                     <a href="_Documents/bilan_personnel.pdf" className="button"><i className="fa fa-download"></i>Le Bilan Personnel</a>
                   </p>
                </div>
             </div>
